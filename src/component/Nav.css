@@ -1,0 +1,53 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 50px;
+    height: 60px;
+    align-items: center;
+    z-index: 1;
+
+    /* animations */
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+.logo{
+    height: 70px;
+    position: fixed;
+    object-fit: contain;
+}
+.user{
+    height: 50px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    object-fit: contain;
+}
+/* .nav_black{
+    background-color: black;
+} */
+
+@media screen and (max-width:492px) {
+    .logo{
+        height: 50px;
+        position: fixed;
+        object-fit: contain;
+    }
+    .user{
+        height: 36px;
+        background-color: aliceblue;
+        border: none;
+        border-radius: 50%;
+        position: fixed;
+        right: 20px;
+        object-fit: contain;
+    }
+    .navbar{
+        height: 40px;
+        padding: 8px 20px;
+    }
+}
